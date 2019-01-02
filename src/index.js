@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 
 const App = () => {
+  console.log('process.env.VERSION', process.env.VERSION);
+  console.log('process.env.PLATFORM', process.env.PLATFORM);
+  console.log('process.env.NODE_ENV', process.env.NODE_ENV);
   return (
     <React.Fragment>
       <div className="flex__container">
           <div className="img__container">
-              <img src="../img/top-right.jpg" />
+              <img src="/dist/img/top-right.jpg" />
           </div>
           <div className="save__date">
             <div className="save__date__text">
